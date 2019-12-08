@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloud.Pocos", "Career
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloudCore.UnitTests.Assignment1", "CareerCloudCore.UnitTests.Assignment1\CareerCloudCore.UnitTests.Assignment1.csproj", "{C6EB7B3C-30E2-4529-9931-C4A5D03ECD8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerCloud.DataAccessLayer", "CareerCloud.DataAccessLayer\CareerCloud.DataAccessLayer.csproj", "{1FCE961C-64A7-4E3C-804B-99282D10C65C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloud.DataAccessLayer", "CareerCloud.DataAccessLayer\CareerCloud.DataAccessLayer.csproj", "{1FCE961C-64A7-4E3C-804B-99282D10C65C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CareerCloud.ADODataAccessLayer", "CareerCloud.ADODataAccessLayer\CareerCloud.ADODataAccessLayer.csproj", "{A59EADE1-6F58-4E81-B9B9-A9862A193FED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloud.ADODataAccessLayer", "CareerCloud.ADODataAccessLayer\CareerCloud.ADODataAccessLayer.csproj", "{A59EADE1-6F58-4E81-B9B9-A9862A193FED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloudCore.UnitTests.Assignment2", "CareerCloudCore.UnitTests.Assignment2\CareerCloudCore.UnitTests.Assignment2.csproj", "{F59918B6-92AA-408A-924A-A92F38DD4E54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CareerCloudCore.UnitTests.Assignment2", "..\CareerCloudCore.UnitTests.Assignment2\CareerCloudCore.UnitTests.Assignment2.csproj", "{11BD36D3-E8D4-489C-8C3F-FE7236B6094C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{A59EADE1-6F58-4E81-B9B9-A9862A193FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A59EADE1-6F58-4E81-B9B9-A9862A193FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A59EADE1-6F58-4E81-B9B9-A9862A193FED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F59918B6-92AA-408A-924A-A92F38DD4E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F59918B6-92AA-408A-924A-A92F38DD4E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F59918B6-92AA-408A-924A-A92F38DD4E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F59918B6-92AA-408A-924A-A92F38DD4E54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BD36D3-E8D4-489C-8C3F-FE7236B6094C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BD36D3-E8D4-489C-8C3F-FE7236B6094C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BD36D3-E8D4-489C-8C3F-FE7236B6094C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BD36D3-E8D4-489C-8C3F-FE7236B6094C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
