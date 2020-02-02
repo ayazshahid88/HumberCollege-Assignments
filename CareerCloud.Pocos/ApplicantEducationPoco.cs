@@ -12,6 +12,7 @@ namespace CareerCloud.Pocos
         [Key]
         public Guid Id { get; set; }
 
+    //    [ForeignKey("FK_Applicant_Educations_Applicant_Profiles")]
         public Guid Applicant { get; set; }
 
         public string Major { get; set; }
@@ -29,6 +30,10 @@ namespace CareerCloud.Pocos
         public Byte? CompletionPercent { get; set; }
 
         [Column("Time_Stamp")]
+        [NotMapped]
         public Byte[] TimeStamp { get; set; }
+
+        public virtual ApplicantProfilePoco ApplicantProfile { get; set; }   
+
     }
 }

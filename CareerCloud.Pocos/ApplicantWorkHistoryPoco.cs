@@ -16,20 +16,33 @@ namespace CareerCloud.Pocos
         public string CompanyName { get; set; }
         [Column("Country_Code")]
         public string CountryCode { get; set; }
+
         public string Location { get; set; }
+
         [Column("Job_Title")]
         public string JobTitle { get; set; }
+
         [Column("Job_Description")]
         public string JobDescription { get; set; }
+
         [Column("Start_Month")]
         public Int16 StartMonth { get; set; }
+
         [Column("Start_Year")]
         public int StartYear { get; set; }
+
         [Column("End_Month")]
         public Int16 EndMonth { get; set; }
+
         [Column("End_Year")]
         public int EndYear { get; set; }
+
         [Column("Time_Stamp")]
+        [NotMapped]
         public Byte[] TimeStamp { get; set; }
+
+        public virtual ApplicantProfilePoco ApplicantProfiles { get; set; }
+
+        public virtual SystemCountryCodePoco SystemCountryCodes { get; set; } 
     }
 }
