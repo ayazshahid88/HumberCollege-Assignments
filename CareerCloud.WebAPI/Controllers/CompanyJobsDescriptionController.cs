@@ -1,0 +1,88 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using CareerCloud.BusinessLogicLayer;
+using CareerCloud.EntityFrameworkDataAccess;
+using CareerCloud.Pocos;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace CareerCloud.WebAPI.Controllers
+{
+    [Route("api/careercloud/company/v1")]
+    [ApiController]
+    public class CompanyJobsDescriptionController : ControllerBase 
+    {
+        private readonly CompanyJobDescriptionLogic _logic;
+
+        public CompanyJobsDescriptionController()
+        {
+            var repo = new EFGenericRepository<CompanyJobDescriptionPoco>();
+            _logic = new CompanyJobDescriptionLogic(repo);
+        }
+
+
+        [HttpGet]
+        [Route("company/{id}")]
+        public ActionResult GetCompanyJobsDescription(Guid id)
+        {
+            CompanyJobDescriptionPoco poco = _logic.Get(id);
+            if (poco == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(poco);
+            }
+        }
+
+        [HttpGet]
+        [Route("company")]
+        public ActionResult GetAllCompanyJobsDescription() 
+        {
+            var applicants = _logic.GetAll();
+
+            if (applicants == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(applicants);
+            }
+        }
+
+        [HttpPost]
+        [Route("company")]
+        public ActionResult PostCompanyJobsDescription(  
+            [FromBody]CompanyJobDescriptionPoco[] pocos)
+        {
+            _logic.Add(pocos);
+
+            return Ok();
+        }
+
+        [HttpPut]
+        [Route("company")]
+        public ActionResult PutCompanyJobsDescription(  
+            [FromBody]CompanyJobDescriptionPoco[] pocos)
+        {
+            _logic.Update(pocos);
+
+            return Ok();
+        }
+
+        [HttpDelete]
+        [Route("company")]
+        public ActionResult DeleteCompanyJobsDescription(  
+            [FromBody]CompanyJobDescriptionPoco[] pocos)
+        {
+            _logic.Delete(pocos);
+
+            return Ok();
+        }
+
+    }
+}

@@ -2,6 +2,7 @@
 using CareerCloud.Pocos;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace CareerCloud.BusinessLogicLayer
@@ -54,5 +55,10 @@ namespace CareerCloud.BusinessLogicLayer
             Verify(pocos);
             base.Update(pocos);
         }
+
+        //public override List<ApplicantEducationPoco> GetAll()
+        //{
+        //    return _repository.GetAll(a => a.ApplicantProfile).ToList();
+        //}
     }
 }

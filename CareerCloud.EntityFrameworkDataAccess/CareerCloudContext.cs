@@ -57,6 +57,8 @@ namespace CareerCloud.EntityFrameworkDataAccess
             var root = config.Build();
             string _connStr = root.GetSection("ConnectionStrings").GetSection("DataConnection").Value;
 
+           
+
             optionsBuilder.UseSqlServer(_connStr);
 
             base.OnConfiguring(optionsBuilder);

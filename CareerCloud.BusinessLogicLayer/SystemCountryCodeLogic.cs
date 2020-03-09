@@ -54,7 +54,7 @@ namespace CareerCloud.BusinessLogicLayer
 
         public void Delete(SystemCountryCodePoco[] pocos)
         {
-
+            _repository.Remove(pocos);
         }
 
         public List<SystemCountryCodePoco> GetAll()
