@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option csharp_namespace = "CareerCloud.gRPC.Protos";
+
+package CareerCloud.gRPC;
+
+
+message IdRequest {
+    string Id = 1;
+}
